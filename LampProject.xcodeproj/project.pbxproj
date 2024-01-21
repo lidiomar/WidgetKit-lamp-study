@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7081564D2B12A7EF00C8A4A3 /* LampProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081564C2B12A7EF00C8A4A3 /* LampProjectApp.swift */; };
+		7081564F2B12A7EF00C8A4A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7081564E2B12A7EF00C8A4A3 /* ContentView.swift */; };
+		708156512B12A7F000C8A4A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 708156502B12A7F000C8A4A3 /* Assets.xcassets */; };
+		708156542B12A7F000C8A4A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 708156532B12A7F000C8A4A3 /* Preview Assets.xcassets */; };
+		708156612B12A9F800C8A4A3 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708156602B12A9F800C8A4A3 /* WidgetKit.framework */; };
+		708156632B12A9F800C8A4A3 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708156622B12A9F800C8A4A3 /* SwiftUI.framework */; };
+		708156662B12A9F800C8A4A3 /* LampProjectWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708156652B12A9F800C8A4A3 /* LampProjectWidgetBundle.swift */; };
+		708156682B12A9F800C8A4A3 /* LampProjectWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708156672B12A9F800C8A4A3 /* LampProjectWidget.swift */; };
+		7081566A2B12A9F900C8A4A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 708156692B12A9F900C8A4A3 /* Assets.xcassets */; };
+		7081566E2B12A9FA00C8A4A3 /* LampProjectWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7081565E2B12A9F800C8A4A3 /* LampProjectWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		708156732B12AA1A00C8A4A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 708156502B12A7F000C8A4A3 /* Assets.xcassets */; };
+		70B792CB2B15767F00862052 /* SymbolToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B792CA2B15767F00862052 /* SymbolToggleStyle.swift */; };
+		70B792CD2B1576AC00862052 /* ToggleIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B792CC2B1576AC00862052 /* ToggleIntent.swift */; };
+		70B792CF2B1577AB00862052 /* LampStatusStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B792CE2B1577AB00862052 /* LampStatusStorage.swift */; };
+		70B792D02B1577BD00862052 /* LampStatusStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B792CE2B1577AB00862052 /* LampStatusStorage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7081566C2B12A9FA00C8A4A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 708156412B12A7EF00C8A4A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7081565D2B12A9F800C8A4A3;
+			remoteInfo = LampProjectWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		708156722B12A9FA00C8A4A3 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7081566E2B12A9FA00C8A4A3 /* LampProjectWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		708156492B12A7EF00C8A4A3 /* LampProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LampProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7081564C2B12A7EF00C8A4A3 /* LampProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampProjectApp.swift; sourceTree = "<group>"; };
+		7081564E2B12A7EF00C8A4A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		708156502B12A7F000C8A4A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		708156532B12A7F000C8A4A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7081565E2B12A9F800C8A4A3 /* LampProjectWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LampProjectWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		708156602B12A9F800C8A4A3 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		708156622B12A9F800C8A4A3 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		708156652B12A9F800C8A4A3 /* LampProjectWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampProjectWidgetBundle.swift; sourceTree = "<group>"; };
+		708156672B12A9F800C8A4A3 /* LampProjectWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampProjectWidget.swift; sourceTree = "<group>"; };
+		708156692B12A9F900C8A4A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7081566B2B12A9FA00C8A4A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70B792CA2B15767F00862052 /* SymbolToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolToggleStyle.swift; sourceTree = "<group>"; };
+		70B792CC2B1576AC00862052 /* ToggleIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleIntent.swift; sourceTree = "<group>"; };
+		70B792CE2B1577AB00862052 /* LampStatusStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampStatusStorage.swift; sourceTree = "<group>"; };
+		70B792D72B157CEB00862052 /* LampProjectWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LampProjectWidgetExtension.entitlements; sourceTree = "<group>"; };
+		70B792D82B157D0500862052 /* LampProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LampProject.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		708156462B12A7EF00C8A4A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7081565B2B12A9F800C8A4A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708156632B12A9F800C8A4A3 /* SwiftUI.framework in Frameworks */,
+				708156612B12A9F800C8A4A3 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		708156402B12A7EF00C8A4A3 = {
+			isa = PBXGroup;
+			children = (
+				70B792D72B157CEB00862052 /* LampProjectWidgetExtension.entitlements */,
+				7081564B2B12A7EF00C8A4A3 /* LampProject */,
+				708156642B12A9F800C8A4A3 /* LampProjectWidget */,
+				7081565F2B12A9F800C8A4A3 /* Frameworks */,
+				7081564A2B12A7EF00C8A4A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7081564A2B12A7EF00C8A4A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				708156492B12A7EF00C8A4A3 /* LampProject.app */,
+				7081565E2B12A9F800C8A4A3 /* LampProjectWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7081564B2B12A7EF00C8A4A3 /* LampProject */ = {
+			isa = PBXGroup;
+			children = (
+				70B792D82B157D0500862052 /* LampProject.entitlements */,
+				7081564C2B12A7EF00C8A4A3 /* LampProjectApp.swift */,
+				7081564E2B12A7EF00C8A4A3 /* ContentView.swift */,
+				708156502B12A7F000C8A4A3 /* Assets.xcassets */,
+				708156522B12A7F000C8A4A3 /* Preview Content */,
+			);
+			path = LampProject;
+			sourceTree = "<group>";
+		};
+		708156522B12A7F000C8A4A3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				708156532B12A7F000C8A4A3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7081565F2B12A9F800C8A4A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				708156602B12A9F800C8A4A3 /* WidgetKit.framework */,
+				708156622B12A9F800C8A4A3 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		708156642B12A9F800C8A4A3 /* LampProjectWidget */ = {
+			isa = PBXGroup;
+			children = (
+				708156652B12A9F800C8A4A3 /* LampProjectWidgetBundle.swift */,
+				708156672B12A9F800C8A4A3 /* LampProjectWidget.swift */,
+				70B792CA2B15767F00862052 /* SymbolToggleStyle.swift */,
+				70B792CC2B1576AC00862052 /* ToggleIntent.swift */,
+				70B792CE2B1577AB00862052 /* LampStatusStorage.swift */,
+				708156692B12A9F900C8A4A3 /* Assets.xcassets */,
+				7081566B2B12A9FA00C8A4A3 /* Info.plist */,
+			);
+			path = LampProjectWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		708156482B12A7EF00C8A4A3 /* LampProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 708156572B12A7F000C8A4A3 /* Build configuration list for PBXNativeTarget "LampProject" */;
+			buildPhases = (
+				708156452B12A7EF00C8A4A3 /* Sources */,
+				708156462B12A7EF00C8A4A3 /* Frameworks */,
+				708156472B12A7EF00C8A4A3 /* Resources */,
+				708156722B12A9FA00C8A4A3 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7081566D2B12A9FA00C8A4A3 /* PBXTargetDependency */,
+			);
+			name = LampProject;
+			productName = LampProject;
+			productReference = 708156492B12A7EF00C8A4A3 /* LampProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7081565D2B12A9F800C8A4A3 /* LampProjectWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7081566F2B12A9FA00C8A4A3 /* Build configuration list for PBXNativeTarget "LampProjectWidgetExtension" */;
+			buildPhases = (
+				7081565A2B12A9F800C8A4A3 /* Sources */,
+				7081565B2B12A9F800C8A4A3 /* Frameworks */,
+				7081565C2B12A9F800C8A4A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LampProjectWidgetExtension;
+			productName = LampProjectWidgetExtension;
+			productReference = 7081565E2B12A9F800C8A4A3 /* LampProjectWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		708156412B12A7EF00C8A4A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					708156482B12A7EF00C8A4A3 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					7081565D2B12A9F800C8A4A3 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 708156442B12A7EF00C8A4A3 /* Build configuration list for PBXProject "LampProject" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 708156402B12A7EF00C8A4A3;
+			productRefGroup = 7081564A2B12A7EF00C8A4A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				708156482B12A7EF00C8A4A3 /* LampProject */,
+				7081565D2B12A9F800C8A4A3 /* LampProjectWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		708156472B12A7EF00C8A4A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708156542B12A7F000C8A4A3 /* Preview Assets.xcassets in Resources */,
+				708156512B12A7F000C8A4A3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7081565C2B12A9F800C8A4A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708156732B12AA1A00C8A4A3 /* Assets.xcassets in Resources */,
+				7081566A2B12A9F900C8A4A3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		708156452B12A7EF00C8A4A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7081564F2B12A7EF00C8A4A3 /* ContentView.swift in Sources */,
+				70B792D02B1577BD00862052 /* LampStatusStorage.swift in Sources */,
+				7081564D2B12A7EF00C8A4A3 /* LampProjectApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7081565A2B12A9F800C8A4A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708156662B12A9F800C8A4A3 /* LampProjectWidgetBundle.swift in Sources */,
+				70B792CD2B1576AC00862052 /* ToggleIntent.swift in Sources */,
+				708156682B12A9F800C8A4A3 /* LampProjectWidget.swift in Sources */,
+				70B792CB2B15767F00862052 /* SymbolToggleStyle.swift in Sources */,
+				70B792CF2B1577AB00862052 /* LampStatusStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7081566D2B12A9FA00C8A4A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7081565D2B12A9F800C8A4A3 /* LampProjectWidgetExtension */;
+			targetProxy = 7081566C2B12A9FA00C8A4A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		708156552B12A7F000C8A4A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		708156562B12A7F000C8A4A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		708156582B12A7F000C8A4A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LampProject/LampProject.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LampProject/Preview Content\"";
+				DEVELOPMENT_TEAM = 9CUQWQ78DD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.test.LampProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		708156592B12A7F000C8A4A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LampProject/LampProject.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LampProject/Preview Content\"";
+				DEVELOPMENT_TEAM = 9CUQWQ78DD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.test.LampProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		708156702B12A9FA00C8A4A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = LampProjectWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9CUQWQ78DD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LampProjectWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LampProjectWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.test.LampProject.LampProjectWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		708156712B12A9FA00C8A4A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = LampProjectWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9CUQWQ78DD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LampProjectWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LampProjectWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.test.LampProject.LampProjectWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		708156442B12A7EF00C8A4A3 /* Build configuration list for PBXProject "LampProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708156552B12A7F000C8A4A3 /* Debug */,
+				708156562B12A7F000C8A4A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		708156572B12A7F000C8A4A3 /* Build configuration list for PBXNativeTarget "LampProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708156582B12A7F000C8A4A3 /* Debug */,
+				708156592B12A7F000C8A4A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7081566F2B12A9FA00C8A4A3 /* Build configuration list for PBXNativeTarget "LampProjectWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				708156702B12A9FA00C8A4A3 /* Debug */,
+				708156712B12A9FA00C8A4A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 708156412B12A7EF00C8A4A3 /* Project object */;
+}
